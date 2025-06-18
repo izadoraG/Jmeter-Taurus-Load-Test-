@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testsuites>
+  <testsuite name="sample_labels" package_name="bzt">
+    <testcase classname="https://a.blazemeter.com/app/#/masters/78299368" name="http://localhost:8080/rail/v1?q=a&amp;maxItems=5&amp;railType=station">
+      <system-out>BlazeMeter report link: https://a.blazemeter.com/app/#/masters/78299368
+</system-out>
+      <error message="Non HTTP response message: Connect to localhost:8080 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused (Connection refused)" type="Error">Non HTTP response message: Connect to localhost:8080 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused (Connection refused)
+(status code is Non HTTP response code: org.apache.http.conn.HttpHostConnectException)
+(total errors of this type: 10)</error>
+    </testcase>
+  </testsuite>
+</testsuites>

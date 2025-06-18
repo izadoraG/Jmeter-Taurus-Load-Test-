@@ -1,0 +1,23 @@
+---
+execution:
+- concurrency: 10
+  duration: 1m
+  scenario: simple_scenario
+modules:
+  blazemeter:
+    token: '********'
+provisioning: local
+reporting:
+- module: final-stats
+- module: console
+- module: junit-xml
+- module: blazemeter
+  report-name: Test with token
+scenarios:
+  simple_scenario:
+    requests:
+    - method: GET
+      url: http://api:3000
+settings:
+  artifacts-dir: results
+

@@ -1,0 +1,29 @@
+{
+ "execution": [
+  {
+   "scenario": {
+    "script": "test-plan.jmx"
+   }
+  }
+ ],
+ "reporting": [
+  {
+   "module": "final-stats"
+  },
+  {
+   "module": "console"
+  },
+  {
+   "module": "junit-xml"
+  },
+  {
+   "module": "blazemeter",
+   "token": "********",
+   "report-name": "Test from Taurus"
+  }
+ ],
+ "provisioning": "local",
+ "settings": {
+  "artifacts-dir": "results"
+ }
+}

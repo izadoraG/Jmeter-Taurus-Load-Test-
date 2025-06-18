@@ -1,0 +1,4 @@
+apiVersion: v2
+name: taurus-test
+description: Run Taurus performance tests with BlazeMeter
+version: 0.1.0

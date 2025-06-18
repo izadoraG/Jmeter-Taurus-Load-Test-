@@ -1,0 +1,34 @@
+bztConfig: |
+  execution:
+    - scenario: simple_scenario
+      hold-for: 1m
+      concurrency: 50
+  
+  scenarios:
+    simple_scenario:
+      requests:
+        - url: http:/
+          method: GET
+        - url: http:/
+          method: GET
+        - url: http:/
+          method: GET
+  
+  modules:
+    blazemeter:
+      token: "b1c2e10dabb730dcbb49435a:d7fe8263e2b2ec2f4ca474e484c45611e399f74f567ac24db9932e46a6fec97b3a4b7945"
+  
+  reporting:
+    - module: final-stats
+    - module: console
+    - module: junit-xml
+    - module: blazemeter
+      report-name: Test with token
+  
+  provisioning: local
+  settings:
+    artifacts-dir: results
+
+image:
+  name: blazemeter/taurus
+  tag: latest

@@ -1,0 +1,43 @@
+{
+ "execution": [
+  {
+   "scenario": "simple_scenario",
+   "duration": "1m",
+   "concurrency": 10
+  }
+ ],
+ "scenarios": {
+  "simple_scenario": {
+   "requests": [
+    {
+     "url": "http://api:3000",
+     "method": "GET"
+    }
+   ]
+  }
+ },
+ "modules": {
+  "blazemeter": {
+   "token": "********"
+  }
+ },
+ "reporting": [
+  {
+   "module": "final-stats"
+  },
+  {
+   "module": "console"
+  },
+  {
+   "module": "junit-xml"
+  },
+  {
+   "module": "blazemeter",
+   "report-name": "Test with token"
+  }
+ ],
+ "provisioning": "local",
+ "settings": {
+  "artifacts-dir": "results"
+ }
+}

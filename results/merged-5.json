@@ -1,0 +1,33 @@
+{
+ "execution": [
+  {
+   "scenario": {
+    "script": "test-plan.jmx"
+   }
+  }
+ ],
+ "modules": {
+  "blazemeter": {
+   "token": "********"
+  }
+ },
+ "reporting": [
+  {
+   "module": "final-stats"
+  },
+  {
+   "module": "console"
+  },
+  {
+   "module": "junit-xml"
+  },
+  {
+   "module": "blazemeter",
+   "report-name": "Teste com token v\u00e1lido"
+  }
+ ],
+ "provisioning": "local",
+ "settings": {
+  "artifacts-dir": "results"
+ }
+}

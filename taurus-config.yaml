@@ -1,0 +1,50 @@
+#execution:
+#  - scenario:
+#      requests:
+#        - url: http://host.docker.internal:3000/ping
+#    concurrency: 1000       # Número de usuários simultâneos
+#    throughput: 1000        # Requisições por segundo
+#    hold-for: 1m            # Duração do teste
+#    ramp-up: 10s            # Tempo para alcançar carga total
+#
+#scenarios:
+#  default:
+#    think-time: 0s
+#
+#reporting:
+#  - module: final-stats
+#  - module: console
+#  - module: junit-xml
+#
+#provisioning: local
+#
+#passfail:
+#  - condition: avg-rt > 100ms         # tempo médio de resposta
+#    fail: true
+#    stop: true
+#  - condition: p95-rt > 100ms         # 95% das requisições em até 100ms
+#    fail: true
+#    stop: true
+#  - condition: failures-rate > 0.05%  # mais que 0.05% de erros
+#    fail: true
+#    stop: true
+#
+execution:
+  - scenario:
+      script: test-plan.jmx
+
+modules:
+  blazemeter:
+    token: "b1c2e10dabb730dcbb49435a:d7fe8263e2b2ec2f4ca474e484c45611e399f74f567ac24db9932e46a6fec97b3a4b7945"
+
+reporting:
+  - module: final-stats
+  - module: console
+  - module: junit-xml
+  - module: blazemeter
+    report-name: Test with token
+
+provisioning: local
+settings:
+  artifacts-dir: results
+

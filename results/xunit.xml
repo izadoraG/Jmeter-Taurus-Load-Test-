@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testsuites>
+  <testsuite name="sample_labels" package_name="bzt">
+    <testcase classname="https://a.blazemeter.com/app/#/masters/78299174" name="http://api:3000">
+      <system-out>BlazeMeter report link: https://a.blazemeter.com/app/#/masters/78299174
+</system-out>
+      <error message="Not Found" type="Error">Not Found
+(status code is 404)
+(total errors of this type: 10)</error>
+    </testcase>
+  </testsuite>
+</testsuites>

@@ -1,0 +1,31 @@
+version: '3.8'
+
+services:
+  api:
+    build:
+      context: ..
+      dockerfile: ../api/Dockerfile
+    container_name: go-api
+    ports:
+      - "3000:3000"
+    networks:
+      - testnet
+
+  taurus:
+    image: blazemeter/taurus
+    container_name: taurus
+    volumes:
+      - .:/bzt
+    working_dir: /bzt
+    entrypoint: >
+      sh -c "
+        sleep 3 &&
+        bzt taurus-config.yaml &&
+        jmeter -g artifacts/result.jtl -o artifacts/report
+      "
+    networks:
+      - testnet
+
+networks:
+  testnet:
+    driver: bridge

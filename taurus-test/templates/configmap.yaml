@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: taurus-config
+data:
+  taurus-config.yaml: |-
+{{ .Values.bztConfig | indent 4 }}

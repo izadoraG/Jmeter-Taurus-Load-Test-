@@ -1,0 +1,28 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: taurus-jmeter-job
+  labels:
+    app: taurus-jmeter
+spec:
+  template:
+    spec:
+      containers:
+        - name: taurus
+          image: {{ .Values.image.name }}:{{ .Values.image.tag }}
+          command:
+            - /bin/sh
+            - -c
+            - |
+              curl -v -H "Authorization: Basic YjFjMmUxMGRhYmI3MzBkY2JiNDk0MzVhOmQ3ZmU4MjYzZTJiMmVjMmY0Y2E0NzRlNDg0YzQ1NjExZTM5OWY3NGY1NjdhYzI0ZGI5OTMyZTQ2YTZmZWM5N2IzYTRiNzk0NQ==" https://a.blazemeter.com/api/v4/accounts && \
+              bzt /bzt/taurus-config.yaml
+          volumeMounts:
+            - name: taurus-config-volume
+              mountPath: /bzt/taurus-config.yaml
+              subPath: taurus-config.yaml
+      volumes:
+        - name: taurus-config-volume
+          configMap:
+            name: taurus-config
+      restartPolicy: Never
+  backoffLimit: 0

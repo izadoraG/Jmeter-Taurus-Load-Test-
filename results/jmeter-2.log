@@ -1,0 +1,104 @@
+2025-06-05 20:15:31,688 INFO o.a.j.u.JMeterUtils: Setting Locale to en_US
+2025-06-05 20:15:31,725 INFO o.a.j.JMeter: Loading user properties from: /root/.bzt/jmeter-taurus/5.5/bin/user.properties
+2025-06-05 20:15:31,727 INFO o.a.j.JMeter: Loading system properties from: /root/.bzt/jmeter-taurus/5.5/bin/system.properties
+2025-06-05 20:15:31,727 INFO o.a.j.JMeter: Loading additional properties from: /bzt/results/jmeter-bzt-2.properties
+2025-06-05 20:15:31,735 INFO o.a.j.JMeter: Copyright (c) 1998-2022 The Apache Software Foundation
+2025-06-05 20:15:31,736 INFO o.a.j.JMeter: Version 5.5
+2025-06-05 20:15:31,736 INFO o.a.j.JMeter: java.version=11.0.27
+2025-06-05 20:15:31,736 INFO o.a.j.JMeter: java.vm.name=OpenJDK 64-Bit Server VM
+2025-06-05 20:15:31,736 INFO o.a.j.JMeter: os.name=Linux
+2025-06-05 20:15:31,736 INFO o.a.j.JMeter: os.arch=amd64
+2025-06-05 20:15:31,736 INFO o.a.j.JMeter: os.version=6.10.14-linuxkit
+2025-06-05 20:15:31,736 INFO o.a.j.JMeter: file.encoding=UTF-8
+2025-06-05 20:15:31,736 INFO o.a.j.JMeter: java.awt.headless=true
+2025-06-05 20:15:31,736 INFO o.a.j.JMeter: Max memory     =2082471936
+2025-06-05 20:15:31,736 INFO o.a.j.JMeter: Available Processors =8
+2025-06-05 20:15:31,743 INFO o.a.j.JMeter: Default Locale=English (United States)
+2025-06-05 20:15:31,743 INFO o.a.j.JMeter: JMeter  Locale=English (United States)
+2025-06-05 20:15:31,743 INFO o.a.j.JMeter: JMeterHome=/root/.bzt/jmeter-taurus/5.5
+2025-06-05 20:15:31,743 INFO o.a.j.JMeter: user.dir  =/bzt
+2025-06-05 20:15:31,743 INFO o.a.j.JMeter: PWD       =/bzt
+2025-06-05 20:15:31,744 INFO o.a.j.JMeter: IP: 172.19.0.3 Name: f88d4c1c97a7 FullName: f88d4c1c97a7
+2025-06-05 20:15:31,744 INFO o.a.j.JMeter: user.classpath=/bzt/results:/bzt
+2025-06-05 20:15:31,745 INFO o.a.j.JMeter: Adding to classpath and loader: /bzt/results
+2025-06-05 20:15:31,747 INFO o.a.j.JMeter: Adding to classpath and loader: /bzt
+2025-06-05 20:15:31,766 INFO o.a.j.s.FileServer: Default base='/bzt'
+2025-06-05 20:15:31,767 INFO o.a.j.s.FileServer: Set new base='/bzt'
+2025-06-05 20:15:32,109 INFO o.a.j.s.SaveService: Testplan (JMX) version: 2.2. Testlog (JTL) version: 2.2
+2025-06-05 20:15:32,314 INFO o.a.j.s.SaveService: Using SaveService properties version 5.0
+2025-06-05 20:15:32,318 INFO o.a.j.s.SaveService: Using SaveService properties file encoding UTF-8
+2025-06-05 20:15:32,321 INFO o.a.j.s.SaveService: Loading file: /bzt/modified_test-plan-4.jmx
+2025-06-05 20:15:32,440 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/html is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2025-06-05 20:15:32,440 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xhtml+xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2025-06-05 20:15:32,440 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2025-06-05 20:15:32,440 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2025-06-05 20:15:32,440 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/vnd.wap.wml is org.apache.jmeter.protocol.http.parser.RegexpHTMLParser
+2025-06-05 20:15:32,440 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/css is org.apache.jmeter.protocol.http.parser.CssParser
+2025-06-05 20:15:32,486 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2025-06-05 20:15:32,497 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2025-06-05 20:15:32,497 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2025-06-05 20:15:32,511 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must contain the string: '.functions.'
+2025-06-05 20:15:32,511 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must not contain the string: '.gui.'
+2025-06-05 20:15:33,019 INFO o.a.j.JMeter: Running test (1749154533018)
+2025-06-05 20:15:33,098 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Thread Group
+2025-06-05 20:15:33,100 INFO o.a.j.e.StandardJMeterEngine: Starting 50 threads for group Thread Group.
+2025-06-05 20:15:33,100 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2025-06-05 20:15:33,101 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=50 ramp-up=30 delayedStart=false
+2025-06-05 20:15:33,129 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-1
+2025-06-05 20:15:33,202 INFO o.a.j.p.h.s.HTTPHCAbstractImpl: Local host = f88d4c1c97a7
+2025-06-05 20:15:33,205 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2025-06-05 20:15:33,206 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2025-06-05 20:15:33,217 INFO o.a.j.p.h.s.HTTPHC4Impl: HTTP request retry count = 0
+2025-06-05 20:15:33,219 INFO o.a.j.s.SampleResult: Note: Sample TimeStamps are START times
+2025-06-05 20:15:33,219 INFO o.a.j.s.SampleResult: sampleresult.default.encoding is set to UTF-8
+2025-06-05 20:15:33,219 INFO o.a.j.s.SampleResult: sampleresult.useNanoTime=true
+2025-06-05 20:15:33,219 INFO o.a.j.s.SampleResult: sampleresult.nanoThreadSleep=5000
+2025-06-05 20:15:33,748 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-2
+2025-06-05 20:15:34,307 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-3
+2025-06-05 20:15:34,907 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-4
+2025-06-05 20:15:35,514 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-5
+2025-06-05 20:15:36,107 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-6
+2025-06-05 20:15:36,708 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-7
+2025-06-05 20:15:37,309 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-8
+2025-06-05 20:15:37,915 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-9
+2025-06-05 20:15:38,509 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-10
+2025-06-05 20:15:39,113 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-11
+2025-06-05 20:15:39,716 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-12
+2025-06-05 20:15:40,316 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-13
+2025-06-05 20:15:40,915 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-14
+2025-06-05 20:15:41,504 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-15
+2025-06-05 20:15:42,106 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-16
+2025-06-05 20:15:42,705 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-17
+2025-06-05 20:15:43,304 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-18
+2025-06-05 20:15:43,906 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-19
+2025-06-05 20:15:44,511 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-20
+2025-06-05 20:15:45,120 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-21
+2025-06-05 20:15:45,714 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-22
+2025-06-05 20:15:46,310 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-23
+2025-06-05 20:15:46,912 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-24
+2025-06-05 20:15:47,518 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-25
+2025-06-05 20:15:48,119 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-26
+2025-06-05 20:15:48,709 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-27
+2025-06-05 20:15:49,310 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-28
+2025-06-05 20:15:49,924 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-29
+2025-06-05 20:15:50,506 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-30
+2025-06-05 20:15:51,103 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-31
+2025-06-05 20:15:51,732 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-32
+2025-06-05 20:15:52,317 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-33
+2025-06-05 20:15:52,990 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-34
+2025-06-05 20:15:53,531 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-35
+2025-06-05 20:15:54,126 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-36
+2025-06-05 20:15:54,712 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-37
+2025-06-05 20:15:55,318 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-38
+2025-06-05 20:15:55,914 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-39
+2025-06-05 20:15:56,516 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-40
+2025-06-05 20:15:57,110 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-41
+2025-06-05 20:15:57,705 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-42
+2025-06-05 20:15:58,310 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-43
+2025-06-05 20:15:58,908 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-44
+2025-06-05 20:15:59,507 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-45
+2025-06-05 20:16:00,111 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-46
+2025-06-05 20:16:00,759 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-47
+2025-06-05 20:16:01,312 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-48
+2025-06-05 20:16:01,911 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-49
+2025-06-05 20:16:02,508 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-50
